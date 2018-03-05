@@ -10,6 +10,7 @@ Rails.application.routes.draw do
 
   namespace :app do
     get 'dashboard' => 'dashboards#index',  as: :dashboards
+    get 'setting' => 'dashboards#setting',  as: :settings
     resources :users do
       collection do
         get :profile
