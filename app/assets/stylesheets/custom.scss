@@ -29,6 +29,12 @@
   margin-bottom: 100px;
 }
 
+#hero-area {
+  background-attachment: initial;
+  @media screen and (max-width: 767px) {
+    background-position: 25% center;
+  }
+}
 
 #hero-area .form-group {
   width: 670px;
