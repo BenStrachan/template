@@ -31,6 +31,7 @@ gem "paperclip", "~> 5.2.1"
 gem 'aws-sdk', '~> 2.3'
 gem 'simple-form-datepicker'
 gem 'ransack'
+gem 'country_select'
 
 
 group :development, :test do
