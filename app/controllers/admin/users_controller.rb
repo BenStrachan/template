@@ -8,7 +8,7 @@ module Admin
     end
 
     def new
-      @user = User.new role: User::ROLE_REGULAR
+      @user = User.new role: User::ROLE_ADMIN
     end
 
     def create
