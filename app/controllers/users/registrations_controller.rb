@@ -9,9 +9,16 @@ class Users::RegistrationsController < Devise::RegistrationsController
   # end
 
   # POST /resource
-  # def create
-  #   super
-  # end
+  def create
+    super
+    if resource.save
+      business = Business.create first_name: resource.first_name,
+                                 last_name: resource.first_name,
+                                 email: resource.email,
+                                 time_zone: "Australia/Brisbane"
+      resource.update business_id: business.id
+    end
+  end
 
   # GET /resource/edit
   # def edit

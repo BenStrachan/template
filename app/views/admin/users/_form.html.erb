@@ -1,5 +1,6 @@
 <%= simple_form_for [:admin, @user] do |f| %>
 
+  <%= f.input :avatar %>
   <%= f.input :first_name, required: true %>
   <%= f.input :last_name, required: true %>
   <%= f.input :email, required: true, autofocus: true %>
@@ -8,6 +9,6 @@
   <%= f.input :password, required: true %>
   <%= f.input :password_confirmation, required: true %>
   <% end %>
-  <%= f.button :submit, class: "btn btn btn-success" %>
+  <%= f.button :submit %>
 
 <% end %>

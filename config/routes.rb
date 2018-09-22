@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+
   root to: 'visitors#index'
 
   devise_for :users, controllers: {
@@ -10,7 +11,8 @@ Rails.application.routes.draw do
 
   namespace :app do
     get 'dashboard' => 'dashboards#index',  as: :dashboards
-    get 'setting' => 'dashboards#setting',  as: :settings
+    get 'setting' => 'settings#index',  as: :settings
+    get 'report' => 'reports#index',  as: :reports
     resources :users do
       collection do
         get :profile
@@ -19,6 +21,14 @@ Rails.application.routes.draw do
   end
 
   namespace :admin do
+    get 'dashboard' => 'dashboards#index',  as: :dashboards
+    get 'setting' => 'settings#index',  as: :settings
+    get 'report' => 'reports#index',  as: :reports
     resources :users
+    resources :businesses, only: [:update] do
+      collection do
+        get :profile
+      end
+    end
   end
 end

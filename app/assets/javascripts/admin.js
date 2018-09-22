@@ -2,3 +2,8 @@
 //= require rails-ujs
 //= require bootstrap.min
 //= require adminlte.min
+//= require moment
+//= require fullcalendar
+//= require appointment_calendar
+//= require bootstrap-wysihtml5
+//= require admin/main.js

@@ -26,6 +26,13 @@ gem 'jbuilder', '~> 2.5'
 gem 'font-awesome-sass', '~> 4.7.0'
 gem 'momentjs-rails', '>= 2.9.0'
 gem 'bootstrap-datepicker-rails', '~> 1.7', '>= 1.7.1.1'
+gem 'will_paginate', '~> 3.1.0'
+gem "paranoia", "~> 2.2"
+gem 'bootstrap-wysihtml5-rails'
+gem 'ckeditor'
+gem 'local_time'
+gem 'wicked_pdf'
+gem 'wkhtmltopdf-binary'
 
 gem "paperclip", "~> 5.2.1"
 gem 'aws-sdk', '~> 2.3'
@@ -49,3 +56,8 @@ end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'rails_12factor', group: :production
+
+# 19/sep/2018
+# fullcalender gem
+gem 'fullcalendar-rails'
+gem 'jquery-ui-rails'

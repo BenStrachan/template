@@ -95,7 +95,7 @@
         color: #888;
         font-size: 12px;
       }
-    } 
+    }
   }
   .list-messages {
     margin-bottom: 20px;
@@ -111,6 +111,38 @@
       color: #888;
       font-weight: 500;
       font-size: 13px;
+    }
+  }
+}
+
+.wrapper {
+  @media screen and (max-width: 767px) {
+    .main-header {
+      >.logo {
+        display: none;
+      }
+
+      .navbar {
+        display: flex;
+        flex-direction: row;
+        .logo.mobile{
+          width: 180px;
+          display: inline-block;
+          flex: 1 1 auto;
+        }
+        .userName {
+          display: none;
+        }
+      }
+    }
+    .main-sidebar {
+      padding-top: 55px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .logo.mobile {
+      display: none;
     }
   }
 }

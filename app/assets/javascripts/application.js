@@ -1,4 +1,10 @@
+//= require jquery
+//= require rails-ujs
 //= require vendors
 //= require main.js
 //= require adminlte.min
 //= require rails-ujs
+//= require bootstrap-wysihtml5
+//= require bootstrap-wysihtml5/locales
+//= require ckeditor/init
+//= require local-time
