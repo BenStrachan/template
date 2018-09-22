@@ -1,0 +1,44 @@
+<%= simple_form_for([:admin, @business]) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <div class="row">
+      <div class="col-md-4">
+        <%= f.input :business_name %>
+      </div>
+      <div class="col-md-4">
+        <%= f.input :first_name %>
+      </div>
+      <div class="col-md-4">
+        <%= f.input :last_name %>
+      </div>
+      <div class="col-md-4">
+        <%= f.input :phone %>
+      </div>
+      <div class="col-md-4">
+        <%= f.input :email %>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <%= f.input :address %>
+      </div>
+      <div class="col-md-4">
+        <%= f.input :city %>
+      </div>
+      <div class="col-md-4">
+        <%= f.input :state %>
+      </div>
+      <div class="col-md-4">
+        <%= f.input :country %>
+      </div>
+      <div class="col-md-4">
+        <%= f.input :time_zone, collection: ActiveSupport::TimeZone::MAPPING.sort, default: 'Draft' %>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>
